@@ -13,4 +13,8 @@ struct ContactList {
     init() {
         self.contactList = []
     }
+    
+    public func showContactList() -> Array<Contact> {
+        return contactList
+    }
 }
