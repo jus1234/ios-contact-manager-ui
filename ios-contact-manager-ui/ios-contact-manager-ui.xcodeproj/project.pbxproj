@@ -13,6 +13,7 @@
 		BD12ED2F2B4437C600BD0A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD12ED2D2B4437C600BD0A3A /* Main.storyboard */; };
 		BD12ED312B4437CB00BD0A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD12ED302B4437CB00BD0A3A /* Assets.xcassets */; };
 		BD12ED342B4437CB00BD0A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD12ED322B4437CB00BD0A3A /* LaunchScreen.storyboard */; };
+		BD12ED3E2B44389700BD0A3A /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD12ED3D2B44389700BD0A3A /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BD12ED302B4437CB00BD0A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD12ED332B4437CB00BD0A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD12ED352B4437CB00BD0A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD12ED3D2B44389700BD0A3A /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		BD12ED262B4437C600BD0A3A /* ios-contact-manager-ui */ = {
 			isa = PBXGroup;
 			children = (
+				BD12ED3C2B44388200BD0A3A /* Model */,
+				BD12ED3B2B44387A00BD0A3A /* Controller */,
 				BD12ED272B4437C600BD0A3A /* AppDelegate.swift */,
 				BD12ED292B4437C600BD0A3A /* SceneDelegate.swift */,
-				BD12ED2B2B4437C600BD0A3A /* ViewController.swift */,
 				BD12ED2D2B4437C600BD0A3A /* Main.storyboard */,
 				BD12ED302B4437CB00BD0A3A /* Assets.xcassets */,
 				BD12ED322B4437CB00BD0A3A /* LaunchScreen.storyboard */,
 				BD12ED352B4437CB00BD0A3A /* Info.plist */,
 			);
 			path = "ios-contact-manager-ui";
+			sourceTree = "<group>";
+		};
+		BD12ED3B2B44387A00BD0A3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD12ED2B2B4437C600BD0A3A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BD12ED3C2B44388200BD0A3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD12ED3D2B44389700BD0A3A /* Contact.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD12ED3E2B44389700BD0A3A /* Contact.swift in Sources */,
 				BD12ED2C2B4437C600BD0A3A /* ViewController.swift in Sources */,
 				BD12ED282B4437C600BD0A3A /* AppDelegate.swift in Sources */,
 				BD12ED2A2B4437C600BD0A3A /* SceneDelegate.swift in Sources */,
