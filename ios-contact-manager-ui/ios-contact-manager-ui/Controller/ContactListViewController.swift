@@ -10,13 +10,13 @@ import UIKit
 final class ContactListViewController: UIViewController {
     
     private let tableView: UITableView
-    private let contactList: ContactList
+    private let contactModel: ContactList
     private var contactArray: Array<Contact>
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         tableView = UITableView()
-        contactList = ContactList()
-        contactArray = contactList.showContactList()
+        contactModel = ContactList()
+        contactArray = contactModel.showContactList()
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
@@ -29,13 +29,12 @@ final class ContactListViewController: UIViewController {
         setupTableView()
         setupTableViewConstraints()
     }
-
 }
 
 extension ContactListViewController {
     func setupTableView() {
         tableView.dataSource = self
-        tableView.rowHeight = 100
+        tableView.rowHeight = 60
         tableView.register(ContactTableViewCell.self, forCellReuseIdentifier: "ContactCell")
     }
     
@@ -59,12 +58,11 @@ extension ContactListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let contactCell = tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath) as! ContactTableViewCell
+        let contact: Contact = contactArray[indexPath.row]
         
-        contactCell.contact = contactArray[indexPath.row]
+        contactCell.nameLabel.text = "\(contact.name)(\(contact.age))"
+        contactCell.phoneNumberLabel.text = contact.phoneNumber
         
         return contactCell
-        
     }
-    
-    
 }

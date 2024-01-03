@@ -69,9 +69,6 @@
 				BD12ED3B2B44387A00BD0A3A /* Controller */,
 				BD12ED272B4437C600BD0A3A /* AppDelegate.swift */,
 				BD12ED292B4437C600BD0A3A /* SceneDelegate.swift */,
-				BD12ED2D2B4437C600BD0A3A /* Main.storyboard */,
-				BD12ED302B4437CB00BD0A3A /* Assets.xcassets */,
-				BD12ED322B4437CB00BD0A3A /* LaunchScreen.storyboard */,
 				BD12ED352B4437CB00BD0A3A /* Info.plist */,
 			);
 			path = "ios-contact-manager-ui";
@@ -98,6 +95,9 @@
 		BDBCCFE02B453A8200F8665A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BD12ED2D2B4437C600BD0A3A /* Main.storyboard */,
+				BD12ED302B4437CB00BD0A3A /* Assets.xcassets */,
+				BD12ED322B4437CB00BD0A3A /* LaunchScreen.storyboard */,
 				BDBCCFE12B453AA400F8665A /* ContactTableViewCell.swift */,
 			);
 			path = View;
