@@ -26,7 +26,6 @@ final class ContactTableViewCell: UITableViewCell {
         sv.axis = .vertical
         sv.distribution = .fill
         sv.alignment = .fill
-        sv.spacing = 6
         return sv
     }()
     
@@ -42,25 +41,26 @@ final class ContactTableViewCell: UITableViewCell {
 }
 
 extension ContactTableViewCell {
-    func setupStackView() {
+    private func setupStackView() {
         self.contentView.addSubview(stackView)
         stackView.addArrangedSubview(nameLabel)
         stackView.addArrangedSubview(phoneNumberLabel)
     }
     
-    func setConstraints() {
+    private func setConstraints() {
         setNameLabelConstraints()
         setStackViewConstraints()
     }
     
-    func setNameLabelConstraints() {
+    private func setNameLabelConstraints() {
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
+            nameLabel.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 3),
             nameLabel.heightAnchor.constraint(equalToConstant: 22)
         ])
     }
     
-    func setStackViewConstraints() {
+    private func setStackViewConstraints() {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             stackView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 10)
