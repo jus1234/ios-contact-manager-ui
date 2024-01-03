@@ -16,6 +16,7 @@
 		BD12ED3E2B44389700BD0A3A /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD12ED3D2B44389700BD0A3A /* Contact.swift */; };
 		BD12ED402B44390200BD0A3A /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD12ED3F2B44390200BD0A3A /* ContactList.swift */; };
 		BDBCCFDF2B45340200F8665A /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBCCFDE2B45340200F8665A /* ContactListViewController.swift */; };
+		BDBCCFE22B453AA400F8665A /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBCCFE12B453AA400F8665A /* ContactTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BD12ED3D2B44389700BD0A3A /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		BD12ED3F2B44390200BD0A3A /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
 		BDBCCFDE2B45340200F8665A /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		BDBCCFE12B453AA400F8665A /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		BD12ED262B4437C600BD0A3A /* ios-contact-manager-ui */ = {
 			isa = PBXGroup;
 			children = (
+				BDBCCFE02B453A8200F8665A /* View */,
 				BD12ED3C2B44388200BD0A3A /* Model */,
 				BD12ED3B2B44387A00BD0A3A /* Controller */,
 				BD12ED272B4437C600BD0A3A /* AppDelegate.swift */,
@@ -90,6 +93,14 @@
 				BD12ED3F2B44390200BD0A3A /* ContactList.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BDBCCFE02B453A8200F8665A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDBCCFE12B453AA400F8665A /* ContactTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 				BD12ED2C2B4437C600BD0A3A /* ViewController.swift in Sources */,
 				BD12ED282B4437C600BD0A3A /* AppDelegate.swift in Sources */,
 				BD12ED2A2B4437C600BD0A3A /* SceneDelegate.swift in Sources */,
+				BDBCCFE22B453AA400F8665A /* ContactTableViewCell.swift in Sources */,
 				BD12ED402B44390200BD0A3A /* ContactList.swift in Sources */,
 				BDBCCFDF2B45340200F8665A /* ContactListViewController.swift in Sources */,
 			);
