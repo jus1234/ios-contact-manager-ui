@@ -8,13 +8,17 @@
 import Foundation
 
 struct ContactList {
-    private var contactList: Array<Contact>
+    private var contactList: Dictionary<String, Contact>
     
     init() {
-        self.contactList = []
+        self.contactList = [:]
     }
     
     public func showContactList() -> Array<Contact> {
-        return contactList
+        return contactList.sorted(by: { $0.value.name < $1.value.name }).map { $0.value }
+    }
+    
+    mutating public func deleteContact(contact: Contact) {
+        contactList.removeValue(forKey: contact.phoneNumber)
     }
 }
