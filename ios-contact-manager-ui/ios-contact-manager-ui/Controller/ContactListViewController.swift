@@ -31,26 +31,6 @@ final class ContactListViewController: UIViewController {
     }
 }
 
-extension ContactListViewController {
-    func setupTableView() {
-        tableView.dataSource = self
-        tableView.rowHeight = 50
-        tableView.register(ContactTableViewCell.self, forCellReuseIdentifier: "ContactCell")
-    }
-    
-    func setupTableViewConstraints() {
-        view.addSubview(tableView)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
-            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0)
-        ])
-    }
-}
-
 extension ContactListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contactArray.count
@@ -65,5 +45,25 @@ extension ContactListViewController: UITableViewDataSource {
         contactCell.accessoryType = .disclosureIndicator
         
         return contactCell
+    }
+}
+
+extension ContactListViewController {
+    private func setupTableView() {
+        tableView.dataSource = self
+        tableView.rowHeight = 50
+        tableView.register(ContactTableViewCell.self, forCellReuseIdentifier: "ContactCell")
+    }
+    
+    private func setupTableViewConstraints() {
+        view.addSubview(tableView)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0)
+        ])
     }
 }
