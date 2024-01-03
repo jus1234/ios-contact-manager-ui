@@ -21,17 +21,12 @@ final class ContactTableViewCell: UITableViewCell {
         return label
     }()
     
-    let detailButton: UIButton = {
-        let button = UIButton(type: .detailDisclosure)
-        return button
-    }()
-    
     let stackView: UIStackView = {
         let sv = UIStackView()
         sv.axis = .vertical
         sv.distribution = .fill
         sv.alignment = .fill
-        sv.spacing = 1
+        sv.spacing = 6
         return sv
     }()
     
@@ -49,7 +44,6 @@ final class ContactTableViewCell: UITableViewCell {
 extension ContactTableViewCell {
     func setupStackView() {
         self.contentView.addSubview(stackView)
-        self.contentView.addSubview(detailButton)
         stackView.addArrangedSubview(nameLabel)
         stackView.addArrangedSubview(phoneNumberLabel)
     }
@@ -57,32 +51,20 @@ extension ContactTableViewCell {
     func setConstraints() {
         setNameLabelConstraints()
         setStackViewConstraints()
-        setDetailButtonConstraints()
     }
     
     func setNameLabelConstraints() {
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            nameLabel.heightAnchor.constraint(equalToConstant: 13)
+            nameLabel.heightAnchor.constraint(equalToConstant: 22)
         ])
     }
     
     func setStackViewConstraints() {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            stackView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 10),
-            stackView.topAnchor.constraint(equalTo: self.detailButton.topAnchor),
-            stackView.bottomAnchor.constraint(equalTo: self.detailButton.bottomAnchor)
+            stackView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 10)
         ])
     }
-    
-    func setDetailButtonConstraints() {
-        detailButton.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            detailButton.leadingAnchor.constraint(equalTo: self.stackView.trailingAnchor, constant: 10),
-            detailButton.trailingAnchor.constraint(equalTo: self.stackView.trailingAnchor),
-            detailButton.heightAnchor.constraint(equalToConstant: 10)
 
-        ])
-    }
 }

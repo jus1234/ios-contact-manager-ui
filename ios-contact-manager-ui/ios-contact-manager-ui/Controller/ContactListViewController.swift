@@ -34,7 +34,7 @@ final class ContactListViewController: UIViewController {
 extension ContactListViewController {
     func setupTableView() {
         tableView.dataSource = self
-        tableView.rowHeight = 60
+        tableView.rowHeight = 50
         tableView.register(ContactTableViewCell.self, forCellReuseIdentifier: "ContactCell")
     }
     
@@ -62,6 +62,7 @@ extension ContactListViewController: UITableViewDataSource {
         
         contactCell.nameLabel.text = "\(contact.name)(\(contact.age))"
         contactCell.phoneNumberLabel.text = contact.phoneNumber
+        contactCell.accessoryType = .disclosureIndicator
         
         return contactCell
     }
