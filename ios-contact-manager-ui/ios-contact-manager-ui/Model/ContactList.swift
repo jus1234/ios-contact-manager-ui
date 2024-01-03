@@ -36,7 +36,7 @@ struct ContactList {
     }
     
     public func showContactList() -> Array<Contact> {
-        return contactList.sorted(by: { $0.value.name < $1.value.name }).map { $0.value }
+        return contactList.sorted(by: { $0.value.name.uppercased() < $1.value.name.uppercased() }).map { $0.value }
     }
     
     mutating public func deleteContact(contact: Contact) {
@@ -48,8 +48,6 @@ struct ContactList {
     }
     
     mutating private func loadContacts() -> [Contact]? {
-//        let fileManager = FileManager.default
-//        let filePath = fileManager.currentDirectoryPath + "contacts.json"
         let filePath = "contacts.json"
         do {
             let data = try Data(contentsOf: URL(fileURLWithPath: filePath))
