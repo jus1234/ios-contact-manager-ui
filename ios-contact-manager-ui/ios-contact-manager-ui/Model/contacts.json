@@ -1,0 +1,25 @@
+{
+    name: "SiDi",
+    age: "88",
+    phonNumber: "010-1111-1111"
+},
+{
+    name: "DiSi",
+    age: "84",
+    phonNumber: "010-2222-1111"
+},
+{
+    name: "iSDi",
+    age: "81",
+    phonNumber: "010-1112-1111"
+},
+{
+    name: "SiiD",
+    age: "82",
+    phonNumber: "010-1122-1111"
+},
+{
+    name: "SiDi",
+    age: "89",
+    phonNumber: "010-1111-1122"
+}
