@@ -18,6 +18,7 @@
 		BDBCCFDF2B45340200F8665A /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBCCFDE2B45340200F8665A /* ContactListViewController.swift */; };
 		BDBCCFE22B453AA400F8665A /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBCCFE12B453AA400F8665A /* ContactTableViewCell.swift */; };
 		BDBCCFE42B4562F800F8665A /* contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = BDBCCFE32B4562F700F8665A /* contacts.json */; };
+		BDBCD00C2B49246200F8665A /* ContactsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBCD00B2B49246200F8665A /* ContactsTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		BDBCCFDE2B45340200F8665A /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		BDBCCFE12B453AA400F8665A /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		BDBCCFE32B4562F700F8665A /* contacts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = contacts.json; sourceTree = "<group>"; };
+		BDBCD00B2B49246200F8665A /* ContactsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				BD12ED302B4437CB00BD0A3A /* Assets.xcassets */,
 				BD12ED322B4437CB00BD0A3A /* LaunchScreen.storyboard */,
 				BDBCCFE12B453AA400F8665A /* ContactTableViewCell.swift */,
+				BDBCD00B2B49246200F8665A /* ContactsTableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				BD12ED2C2B4437C600BD0A3A /* ViewController.swift in Sources */,
 				BD12ED282B4437C600BD0A3A /* AppDelegate.swift in Sources */,
 				BD12ED2A2B4437C600BD0A3A /* SceneDelegate.swift in Sources */,
+				BDBCD00C2B49246200F8665A /* ContactsTableView.swift in Sources */,
 				BDBCCFE22B453AA400F8665A /* ContactTableViewCell.swift in Sources */,
 				BD12ED402B44390200BD0A3A /* ContactList.swift in Sources */,
 				BDBCCFDF2B45340200F8665A /* ContactListViewController.swift in Sources */,
